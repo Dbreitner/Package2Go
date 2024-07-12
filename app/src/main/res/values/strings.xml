@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Package2Go</string>
+    <string name="logo_name">Send your packages</string>
+    <string name="slogan_name">We will help you deliver your packages!</string>
+    <string name="business_heading">Grow\nYour Business</string>
+    <string name="login">Login</string>
+    <string name="signup">SIGN UP</string>
+    <string name="enter_username">Username</string>
+    <string name="enter_password">Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="create_account">Create Account</string>
+    <string name="full_name">Full Name</string>
+    <string name="enter_email">Email</string>
+    <string name="next_btn">NEXT</string>
+</resources>

@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Rider.RiderCompletedDeliveries"
+    android:background="@color/lightwhite">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize">
+
+            <ImageView
+                android:id="@+id/back_to_dashboard_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="BackToDashboard"
+                android:padding="5dp"
+                android:src="@drawable/general_back_icon_black" />
+
+
+
+           <androidx.appcompat.widget.SearchView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:id="@+id/search"
+            app:iconifiedByDefault="true" />
+
+            
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/delivery_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Past Deliveries"
+            android:textSize="30sp"
+            android:fontFamily="@font/muli_black"
+            android:textColor="@color/black"
+            android:padding="10dp">
+
+
+        </TextView>
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/recCard"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="8dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="378dp"
+                    android:layout_height="500dp"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    android:weightSum="5.5">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1.5"
+
+                        android:weightSum="2">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="140dp"
+                            android:layout_weight="1.5"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/recTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="10dp"
+                                android:maxLines="1"
+                                android:text="Delivery ID: UID234567"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:fontFamily="@font/muli_bold"/>
+                            <TextView
+                                android:id="@+id/status"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/recTitle"
+                                android:paddingTop="10dp"
+                                android:maxLines="1"
+                                android:text="Status: Complete"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:fontFamily="@font/muli_bold"/>
+
+                            <TextView
+                                android:id="@+id/date"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/status"
+                                android:paddingTop="10dp"
+                                android:maxLines="1"
+                                android:text="Date:14/4/2023"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:fontFamily="@font/muli_bold"/>
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="120dp"
+                            android:layout_weight="0.7"
+                            android:gravity="center">
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/recCard2"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_below="@+id/recCard"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="8dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="378dp"
+                    android:layout_height="500dp"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    android:weightSum="5.5">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1.5"
+
+                        android:weightSum="2">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="140dp"
+                            android:layout_weight="1.5"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/recTitle2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="10dp"
+                                android:maxLines="1"
+                                android:text="Delivery ID: UID098765"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:fontFamily="@font/muli_bold"/>
+                            <TextView
+                                android:id="@+id/status2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/recTitle2"
+                                android:paddingTop="10dp"
+                                android:maxLines="1"
+                                android:text="Status: Complete"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:fontFamily="@font/muli_bold"/>
+
+                            <TextView
+                                android:id="@+id/date2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/status2"
+                                android:paddingTop="10dp"
+                                android:maxLines="1"
+                                android:text="Date:10/4/2023"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:fontFamily="@font/muli_bold"/>
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="120dp"
+                            android:layout_weight="0.7"
+                            android:gravity="center">
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/recCard3"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_below="@+id/recCard2"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="8dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="378dp"
+                    android:layout_height="500dp"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    android:weightSum="5.5">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1.5"
+
+                        android:weightSum="2">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="140dp"
+                            android:layout_weight="1.5"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/recTitle3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="10dp"
+                                android:maxLines="1"
+                                android:text="Delivery ID: UID595667"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:fontFamily="@font/muli_bold"/>
+                            <TextView
+                                android:id="@+id/status3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/recTitle3"
+                                android:paddingTop="10dp"
+                                android:maxLines="1"
+                                android:text="Status: Complete"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:fontFamily="@font/muli_bold"/>
+
+                            <TextView
+                                android:id="@+id/date3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/status3"
+                                android:paddingTop="10dp"
+                                android:maxLines="1"
+                                android:text="Date:6/4/2023"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:fontFamily="@font/muli_bold"/>
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="120dp"
+                            android:layout_weight="0.7"
+                            android:gravity="center">
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>

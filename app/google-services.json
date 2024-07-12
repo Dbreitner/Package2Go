@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "907705287967",
+    "project_id": "package2go-71299",
+    "storage_bucket": "package2go-71299.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:907705287967:android:6697a743899cf7ffcd9c2a",
+        "android_client_info": {
+          "package_name": "com.example.package2go"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUpPhdI7o5Uh1bEL3yNvrIq5to5xbBd6Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
